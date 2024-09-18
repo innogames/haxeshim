@@ -35,7 +35,7 @@ typedef Config = {
   var resolveLibs(default, null):LibResolution;
 }
 
-@:enum abstract LibResolution(String) {
+enum abstract LibResolution(String) {
   var Scoped = null;
   var Mixed = 'mixed';
   var Haxelib = 'haxelib';

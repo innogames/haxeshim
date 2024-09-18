@@ -3,8 +3,8 @@ package haxeshim;
 typedef Vars = haxe.DynamicAccess<String>;
 
 @:forward(keys)
+@:transitive
 abstract Env(Vars) {
-
   @:from static function ofVars(vars:Vars) {
     var ret = new Vars();
     for (k in vars.keys())
